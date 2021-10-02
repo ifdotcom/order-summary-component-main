@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://order-summary-component-main-rust.vercel.app/)
+- Solution URL: [ Order summary card solution](https://www.frontendmentor.io/solutions/order-summary-card-solution-_RAPyvjud)
+- Live Site URL: [ Order summary card solution](https://order-summary-component-main-rust.vercel.app/)
 
 ## My process
 
@@ -53,5 +53,5 @@ Users should be able to:
 - Frontend Mentor - [@ifdotcom](https://www.frontendmentor.io/profile/ifdotcom)
 
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
 
