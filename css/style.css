@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/* BLOBALES */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* Reset para REMS - 62.5% = 10px de 16px */
+  font-family: "Red Hat Display", sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-900 {
+  font-weight: 900;
+}
+
+/* Card */
+.card {
+  width: 30vw;
+  min-height: 90vh;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 40px 25px -5px;
+}
+
+/* Hero */
+.hero img {
+  width: 30vw;
+  min-height: 30vh;
+  border-radius: 15px 15px 0 0;
+}
+/* Info */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.info__title {
+  font-size: 2.3rem;
+  color: hsl(223, 47%, 23%);
+  padding: 0;
+}
+.info__title h3 {
+  font-weight: 900;
+  margin: 3rem 0 0.5rem 0;
+}
+.info__description {
+  width: 80%;
+  text-align: center;
+}
+
+.info__description p {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: hsl(224, 23%, 55%);
+  line-height: 1.5;
+}
+/* Price */
+.price {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  height: 8rem;
+}
+
+.price__logo {
+  margin-right: 2rem;
+}
+
+.price__logo img {
+  width: 5rem;
+  height: 5rem;
+  flex-grow: 1;
+}
+.price__description {
+  font-size: 1.5rem;
+  flex-grow: 1;
+}
+.price__description p:first-child {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.price__description p:nth-child(2) {
+  color: hsl(224, 23%, 55%);
+}
+.price__description p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.price__link {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.price__link a:hover {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
+}
+
+/* Buttons */
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin-top: 2rem;
+}
+
+.buttons__pay {
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  margin: 1rem 0 1rem 0;
+  font-size: 1.3rem;
+  height: 4.5rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 40px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -1px;
+}
+
+.buttons__pay:hover {
+  background-color: hsl(224, 23%, 55%);
+  cursor: pointer;
+}
+.buttons__cancel {
+  border: none;
+  background: none;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0 0 1rem 0;
+  line-height: 4rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.buttons__cancel:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
+
+/* Frontendmentor styles */
+
+.attribution {
+  margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsla(228, 45%, 44%, 0.493);
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+
+  .hero img {
+    min-width: 100%;
+  }
+
+  .info__description {
+    width: 80%;
+  }
+  .info__title {
+    font-size: 2rem;
+  }
+  .info__description p {
+    font-size: 1.6rem;
+  }
+
+  .price {
+    width: 80%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 1024px) {
+  .card {
+    width: 50vw;
+    min-height: 50vh;
+  }
+  .hero img {
+    min-width: 100%;
+    min-height: 10vh;
+  }
+}
